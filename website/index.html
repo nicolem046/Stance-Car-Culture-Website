@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Stance Culture</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&family=Cantata+One&family=Carattere&family=Fjalla+One&family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Syne:wght@400..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="url-to-cdn/splide.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="brand-logo">
+            <img src="images/logo.svg" alt="Brand Logo" class="logo">
+        </div>
+        <div class="nav-links">
+            <a href="#hero">Home</a>
+            <a href="#intro">Stance</a>
+            <a href="#textSection">About</a>
+            <a href="#gallery">Gallery</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div id="hero">
+        <!-- Hero Image -->
+        <div class="hero-image">
+            <img src="images/hero-car.jpg" alt="Hero Image" class="hero-img">
+        </div>
+
+        <!-- Hero Text -->
+        <div class="hero-text">
+            <p class="subheading">Stance Culture</p>
+            <p class="main-text">Form Meets Function</p>
+        </div>
+
+        <!-- Music Control Button -->
+        <div id="music-button">
+            <sl-icon-button id="musicControl" name="music-note-beamed" label="Play Music"></sl-icon-button>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator">
+            <img src="images/arrow.svg" alt="Scroll Down Arrow" class="arrow">
+        </div>
+
+        <!-- Background Music-->
+        <audio id="backgroundMusic" loop>
+            <source src="audio/Tokyo-Drift-Fast-&-Furious.mp3" type="audio/mp3">
+        </audio>
+    </div>
+
+    <!-- Intro Section -->
+    <div id="intro">
+        <h1>Stance Culture</h1>
+        <p>Stance culture focuses on modifying vehicles for a lowered, wide appearance that emphasises style and individuality. Enthusiasts adjusts suspension, camber angles and fitment to create aesthetically pleasing builds.</p>
+    </div>
+
+    <!-- Types of Fitments Section -->
+    <div id="fitments">
+        <h1>Types of  Fitments</h1>
+        <div class="fitments-slider-container">
+            <div class="fitments-slider">
+                <div class="fitment">
+                    <img src="images/fit-stance.png" alt="">
+                    <h2>Stance Fitment</h2>
+                    <p>Stance fitment refers to the negative camber of the car's suspension to tilt the tops of the wheels inward to create a more aggressive and unique look. This modification enhances the car's stance making it look lower, but it often sacrifices tire contact with the road during cornering which potentially affects performance and tire wear</p>
+                </div>
+
+                <div class="fitment">
+                    <img src="images/fit-flush.jpg" alt="">
+                    <h2>Flush Fitment</h2>
+                    <p>Flush fitment occurs when the wheels and tires align perfectly with the bodywork, neither sticking out nor tucked in. This is one of the hardest fitments to achieve because it requires precise calculations for suspension travel and careful selection of wheel widths and offsets. It often involves custom modifications to the body.</p>
+                </div>
+
+                <div class="fitment">
+                    <img src="images/fit-tuck.jpg" alt="">
+                    <h2>Tuck Fitment</h2>
+                    <p>Tuck fitment features wheels that are completely tucked within the car's arches meaning the wheels and tires do not extend beyond the bodywork. Achieving this look may require modifications like rolling the arches or cutting fender liners especially when the car is lowered significantly.</p>
+                </div>
+                
+                <div class="fitment">
+                    <img src="images/fit-poke.jpg" alt="">
+                    <h2>Poke Fitment</h2>
+                    <p>Poke fitment is when the wheels and tires extend out beyond the bodywork. This look is often seen on cars before wide-body kits are installed, where the wheels visibly poke out. Once the wide arches are added the wheels are enclosed within the bodywork eliminating the poke.</p>
+                </div>
+
+                <div>
+                    <button class="prev-btn">&#10094;</button>
+                    <button class="next-btn">&#10095;</button>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Suspension Configurator Section -->
+    <div id="suspension">
+        <h1>Suspension Configurator</h1>
+        <div class="configurator">
+            <sl-image-comparer position="50">
+                <img slot="before" src="images/config-before.jpg" alt="car with normal suspension">
+                <img slot="after" src="images/config-after.png"
+                alt="car with low suspension">
+            </sl-image-comparer>
+        </div>
+    </div>
+
+    <!-- Safety and Compliance Section -->
+    <div id="safety"> 
+        <h1>Safety and Legal Compliance</h1>
+        <div class="cards">
+            <div class="card">
+                <div class="inner">
+                    <div class="front">Reduced Visibility</div>
+                    <div class="back">
+                        <img src="images/safe-visibility-off.png" alt="">
+                        <h3>Reduced Visibility</h3>
+                        <p>Lowered ride height can obstruct the driver's view of the road, increasing the risk of accidents.</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="card">
+                <div class="inner">
+                    <div class="front">Increased Tyre Wear</div>
+                    <div class="back">
+                        <img src="images/safe-tyre.png" alt="">
+                        <h3>Increased Tyre Wear</h3>
+                        <p>Extreme camber can cause uneven tire wear, which may lead to blowouts and reduced vehicle safety.</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="card">
+                <div class="inner">
+                    <div class="front">Compromised Suspension</div>
+                    <div class="back">
+                        <img src="images/safe-suspension.png" alt="">
+                        <h3>Compromised Suspension</h3>
+                        <p>Modifications can weaken suspension systems, leading to instability and potential loss of control during driving.</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="card">
+                <div class="inner">
+                    <div class="front">Legal Compliance Issues</div>
+                    <div class="back">
+                        <img src="images/safe-fine.png" alt="">
+                        <h3>Legal Compliance Issues</h3>
+                        <p>Many states have strict regulations on vehicle height and modifications, risking fines or impoundment for non-compliance.</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="card">
+                <div class="inner">
+                    <div class="front">Insurance Challenges</div>
+                    <div class="back">
+                        <img src="images/safe-no-insurance.png" alt="">
+                        <h3>Insurance Challenges</h3>
+                        <p>Modified cars may face higher premiums or denied claims if the modifications are deemed unsafe or illegal.</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="card">
+                <div class="inner">
+                    <div class="front">Road Damage</div>
+                    <div class="back">
+                        <img src="images/safe-damage.png" alt="">
+                        <h3>Road Damage</h3>
+                        <p>Excessively low cars can scrape on public roads and speed bumps, leading to potential damage to both the vehicle and infrastructure.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Top Car of the Month Section -->
+    <div id="topcar">
+        <h1>Top Car of the Month</h1>
+        <div class="topcar-slider" data-mouse-down-at="0" data-prev-percentage="0">
+            <img class="image" src="images/1-s13.jpg" alt="" draggable="false">
+            <img class="image" src="images/2-s13.jpg" alt="" draggable="false">
+            <img class="image" src="images/3-s13.jpg" alt="" draggable="false">
+            <img class="image" src="images/4-s13.jpg" alt="" draggable="false">
+            <img class="image" src="images/5-s13.jpg" alt="" draggable="false">
+            <img class="image" src="images/6-s13.jpg" alt="" draggable="false">
+            <img class="image" src="images/7-s13.jpg" alt="" draggable="false">
+            <img class="image" src="images/8-s13.jpg" alt="" draggable="false">
+        </div>
+        <div class="driver">
+            <h2>Nissan Silvia S13 -<br> Masahiro Sugawa</h2>
+            <p>Bathed in a beautiful red, this impeccable Silvia S13 sits like the flitting woman of my wildest dreams, alluring, pleasing to the eye, and not without a few marks to show that she knows how to get down. With all musings from a hopeless romantic aside, this sanguine Nissan comes from the motherland, hailing from the Yamagata Prefecture of Japan. This, is Masahiro Sugawa's Nissan Silvia S13.</p>
+        </div>  
+    </div>
+
+    <!-- About Section -->
+    <section id="textSection">
+        <h1>About</h1>
+        <div class="container">
+            <div class="wrapper">
+            <p class="white">Stance culture is about expressing individuality through cars and encouraging people to break away from the norm and showcase their unique style. It originated from lowrider and Japanese car scenes and focuses on making cars look cool, often by lowering them and changing the wheels. While it started with performance improvements, it has evolved to prioritise how a car looks over how it drives. This culture celebrates creativity and personal expression which essentially turns cars into reflections of the owner's personality.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <div id="gallery">
+        <h1>Gallery</h1>
+        <div class="masonry-layout">
+            <img src="images/gallery-1.jpg" alt="">
+            <img src="images/gallery-2.jpg" alt="">
+            <img src="images/gallery-3.jpg" alt="">
+            <img src="images/gallery-4.jpg" alt="">
+            <img src="images/gallery-5.jpg" alt="">
+            <img src="images/gallery-6.jpg" alt="">
+            <img src="images/gallery-7.jpg" alt="">
+            <img src="images/gallery-8.jpg" alt="">
+            <img src="images/gallery-9.jpg" alt="">
+            <img src="images/gallery-10.jpg" alt="">
+            <img src="images/gallery-11.jpg" alt="">
+            <img src="images/gallery-12.jpg" alt="">
+            <img src="images/gallery-13.jpg" alt="">
+            <img src="images/gallery-14.jpg" alt="">
+            <sl-animated-image src="images/gallery-15.gif" alt="closeup car drifting"></sl-animated-image>
+            <sl-animated-image src="images/gallery-16.jpg" alt=""></sl-animated-image>
+            <img src="images/gallery-17.jpg" alt="">
+            <img src="images/gallery-18.jpg" alt="">
+            <img src="images/gallery-19.jpg" alt="">
+            <img src="images/gallery-20.jpg" alt="">
+            <img src="images/gallery-21.jpg" alt="">
+            <img src="images/gallery-22.jpg" alt="">
+            <img src="images/gallery-23.jpg" alt="">
+            <sl-animated-image src="images/gallery-24.gif" alt="car drifting"></sl-animated-image>
+            <img src="images/gallery-25.jpg" alt="closeup car drifting">
+        </div>
+    </div>
+
+
+    <!--Scripts-->
+    <!-- Music Toggle -->
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.18.0/cdn/shoelace.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/split-type"></script>
+
+    <!-- Suspension Configurator -->
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.18.0/cdn/shoelace.js"></script>
+
+    <!-- Gallery -->
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.18.0/cdn/components/animated-image/animated-image.js"></script>
+
+    <!-- About -->
+    <script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
+    <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+    <script src="https://assets.codepen.io/16327/SplitText3.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
